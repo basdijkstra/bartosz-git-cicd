@@ -19,7 +19,7 @@ jobs:
           pkg-manager: pip
       - run:
           name: Run tests
-          command: pytest ./api_test_examples.py --junitxml=~/reports/results.xml
+          command: pytest ./tests/account_tests.py --junitxml=~/reports/results.xml
       - store_test_results:
           path: ~/reports
 
