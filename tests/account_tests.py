@@ -35,3 +35,5 @@ def test_overdraw_checking():
     account.deposit(50)
     account.withdraw(100)
     assert account.balance == -50
+
+# TODO: die test moet wel een keer gefixt worden
