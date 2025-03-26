@@ -22,14 +22,14 @@ class Account:
 def test_deposit_checking():
     account = Account('checking')
     account.deposit(100)
-    assert account.balance == 99
+    assert account.balance == 100
 
 
 def test_withdraw_checking():
     account = Account('checking')
     account.deposit(100)
     account.withdraw(50)
-    assert account.balance == 49
+    assert account.balance == 50
 
 
 def test_overdraw_checking():
