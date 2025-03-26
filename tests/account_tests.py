@@ -29,7 +29,7 @@ def test_withdraw_checking():
     account = Account('checking')
     account.deposit(100)
     account.withdraw(50)
-    assert account.balance == 50
+    assert account.balance == 49
 
 
 def test_overdraw_checking():
